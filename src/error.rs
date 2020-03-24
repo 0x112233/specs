@@ -49,7 +49,6 @@ impl StdError for BoxedErr {}
 /// This is an enum which is able to represent
 /// all error types of this library.
 #[derive(Debug)]
-#[non_exhaustive]
 pub enum Error {
     /// A custom, boxed error.
     Custom(BoxedErr),
